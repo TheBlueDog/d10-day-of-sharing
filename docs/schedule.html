@@ -1,214 +1,228 @@
-
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
 	<meta http-equiv="X-UA-Compatible" content="ie-edge">
-	<title>Event Schedule | D10: Day of Sharing 24</title>
+	<title>D10: Day of Sharing 24 | Event Schedule</title>
 	<link rel="stylesheet" type="text/css" href="build/tailwind.css">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
 <body>
 
-<nav class="bg-gray-800">
-  <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-    <div class="relative flex items-center justify-between h-16">
-      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-        <!-- Mobile menu button-->
-        <button class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-          <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-      </div>
-      <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-        <div class="flex-shrink-0 flex items-center">
-            <a href="index.html" class="text-gray-300 over:text-white px-3 py-2 rounded-md text-sm font-extrabold uppercase tracking-widest">D10 | Day of Sharing 24</a>
-        </div>
-        <div class="hidden sm:block sm:ml-6">
-          <div class="flex space-x-4">
-            <!--<a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Dashboard</a> -->
-            <a href="schedule.html" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Event Schedule</a>
-            <a href="tech.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Tech Support</a>
-            <a href="resources.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Sober Resources</a>
-            <a href="speakers.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Speaker Tips</a>
-            <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact Us</a>
+<div>
+  <nav class="bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+            <!-- <img class="h-8 w-8" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow"> -->
+            <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-bold uppercase tracking-wider">D10 | Day of Sharing</a>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="hidden sm:hidden">
-    <div class="px-2 pt-2 pb-3 space-y-1">
-        <a href="schedule.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-        <a href="tech.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Tech Support</a>
-        <a href="resources.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Sober Resources</a>
-        <a href="speakers.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Speaker Tips</a>
-        <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact Us</a>
-    </div>
-  </div>
-</nav>
-
-
-
-
-
-      <div class="relative pt-16 pb-16 flex content-center items-center justify-center bg-gray-600" style="min-height: 25vh;">
-        <div class="container relative mx-auto">
-          <div class="items-center flex flex-wrap">
-            <div class="w-full md:w-9/12 px-4 ml-auto mr-auto text-center">
-              <div class="pr-12">
-                <h1 class="text-white text-5xl font-semibold uppercase tracking-wider lg:text-6xl xl:text-7xl">
-                  Event Schedule
-                </h1>
-              </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="schedule.html" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium uppercase">Event Schedule</a>
+              <a href="participate.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium uppercase">How to Participate</a>
+              <a href="speakers.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium uppercase">Speaker Tips</a>
+              <a href="resources.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium uppercase">Sober Resources</a>
+              <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium uppercase">Contact Us</a>
             </div>
           </div>
         </div>
+        <div class="-mr-2 flex md:hidden">
+          <!-- Mobile menu button -->
+          <button class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+            <span class="sr-only">Open main menu</span>
+            <!--
+              Heroicon name: menu
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <!--
+              Heroicon name: x
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
       </div>
+    </div>
 
-<div class="rounded-xl bg-gray-400 overflow-hidden p-4 m-8">
-  <h2 class="ml-4 text-white text-4xl font-bold">9:00 - 10:00 am</h2>
-  <div class="flex flex-col md:flex-row space-4">
-    <div class="md:w-1/2 m-4 p-4 rounded-md bg-yellow-500 text-white">
-        <p class="text-lg leading-6 font-medium">Room #</p>
-        <p class="my-4 text-3xl leading-6 font-medium uppercase">Session Title</p>
-        <p class="text-base font-normal">Speaker name</p>
+    <!--
+      Mobile menu, toggle classes based on menu state.
+      Open: "block", closed: "hidden"
+    -->
+    <div class="hidden md:hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a href="index.html" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium uppercase">Event Schedule</a>
+        <a href="participate.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium uppercase">How to Participate</a>
+        <a href="speakers.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium uppercase">Speaker Tips</a>
+        <a href="resources.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium uppercase">Sober Resources</a>
+        <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium uppercase">Contact Us</a>
+      </div>
     </div>
-    <div class="md:w-1/2 m-4 p-4 rounded-md bg-yellow-500 text-white">
-        <p class="text-lg leading-6 font-medium">Room #</p>
-        <p class="my-4 text-3xl leading-6 font-medium uppercase">Session Title</p>
-        <p class="text-base font-normal">Speaker name</p>
-    </div>
-  </div>
-</div>
+  </nav>
 
-<div class="rounded-xl bg-gray-400 overflow-hidden p-4 m-8">
-  <h2 class="ml-4 text-white text-4xl font-bold">10:15 - 11:15 am</h2>
-  <div class="flex flex-col md:flex-row space-4">
-    <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
-        <p class="text-lg leading-6 font-medium">Room #</p>
-        <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
-        <p class="text-base font-normal">Speaker name</p>
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl font-bold leading-tight text-gray-900">
+        Event Schedule
+      </h1>
     </div>
-    <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
-        <p class="text-lg leading-6 font-medium">Room #</p>
-        <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
-        <p class="text-base font-normal">Speaker name</p>
-    </div>
-    <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
-        <p class="text-lg leading-6 font-medium">Room #</p>
-        <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
-        <p class="text-base font-normal">Speaker name</p>
-    </div>
-    <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
-        <p class="text-lg leading-6 font-medium">Room #</p>
-        <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
-        <p class="text-base font-normal">Speaker name</p>
-    </div>
-    <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
-        <p class="text-lg leading-6 font-medium">Room #</p>
-        <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
-        <p class="text-base font-normal">Speaker name</p>
-    </div>
-  </div>
-</div>
-
-<div class="rounded-xl bg-gray-400 overflow-hidden p-4 m-8">
-  <h2 class="ml-4 text-white text-4xl font-bold">11:30 am - 12:30 pm</h2>
-  <div class="flex flex-col md:flex-row space-4">
-    <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
-        <p class="text-lg leading-6 font-medium">Room #</p>
-        <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
-        <p class="text-base font-normal">Speaker name</p>
-    </div>
-    <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
-        <p class="text-lg leading-6 font-medium">Room #</p>
-        <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
-        <p class="text-base font-normal">Speaker name</p>
-    </div>
-    <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
-        <p class="text-lg leading-6 font-medium">Room #</p>
-        <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
-        <p class="text-base font-normal">Speaker name</p>
-    </div>
-    <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
-        <p class="text-lg leading-6 font-medium">Room #</p>
-        <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
-        <p class="text-base font-normal">Speaker name</p>
-    </div>
-    <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
-        <p class="text-lg leading-6 font-medium">Room #</p>
-        <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
-        <p class="text-base font-normal">Speaker name</p>
-    </div>
-  </div>
-</div>
-
-<div class="rounded-xl bg-gray-400 overflow-hidden p-4 m-8">
-  <h2 class="ml-4 text-white text-4xl font-bold">12:30 - 1:15 pm</h2>
-  <div class="flex flex-col md:flex-row space-4">
-    <div class="md:w-full m-4 p-4 rounded-md bg-yellow-500 text-white">
-        <p class="text-lg leading-6 font-medium">Room #</p>
-        <p class="my-4 text-3xl leading-6 font-medium uppercase">Session Title</p>
-        <p class="text-base font-normal">Speaker name</p>
-    </div>
-  </div>
-</div>
+  </header>
 
 
-<div class="rounded-xl bg-gray-400 overflow-hidden p-4 m-8">
-  <h2 class="ml-4 text-white text-4xl font-bold">1:15 - 2:15 pm</h2>
-  <div class="flex flex-col md:flex-row space-4">
-    <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
-        <p class="text-lg leading-6 font-medium">Room #</p>
-        <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
-        <p class="text-base font-normal">Speaker name</p>
-    </div>
-    <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
-        <p class="text-lg leading-6 font-medium">Room #</p>
-        <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
-        <p class="text-base font-normal">Speaker name</p>
-    </div>
-    <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
-        <p class="text-lg leading-6 font-medium">Room #</p>
-        <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
-        <p class="text-base font-normal">Speaker name</p>
-    </div>
-    <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
-        <p class="text-lg leading-6 font-medium">Room #</p>
-        <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
-        <p class="text-base font-normal">Speaker name</p>
-    </div>
-    <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
-        <p class="text-lg leading-6 font-medium">Room #</p>
-        <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
-        <p class="text-base font-normal">Speaker name</p>
-    </div>
-  </div>
-</div>
+  <main>
+    <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
 
-<div class="rounded-xl bg-gray-400 overflow-hidden p-4 m-8">
-  <h2 class="ml-4 text-white text-4xl font-bold">2:30 - 4:00 pm</h2>
-  <div class="flex flex-col md:flex-row space-4">
-    <div class="md:w-full m-4 p-4 rounded-md bg-yellow-500 text-white">
-        <p class="text-lg leading-6 font-medium">Room #</p>
-        <p class="my-4 text-3xl leading-6 font-medium uppercase">Session Title</p>
-        <p class="text-base font-normal">Speaker name</p>
+      <!-- SESSION 1 -->
+        <div class="rounded-xl bg-gray-400 overflow-hidden p-4 m-8">
+            <h2 class="ml-4 text-white text-4xl font-bold">9:00 - 10:00 am</h2>
+            <div class="flex flex-col md:flex-row space-4">
+                <div class="md:w-1/2 m-4 p-4 rounded-md bg-yellow-500 text-white">
+                    <p class="text-lg leading-6 font-medium">Room #</p>
+                    <p class="my-4 text-3xl leading-6 font-medium uppercase">Session Title</p>
+                    <p class="text-base font-normal">Speaker name</p>
+                </div>
+                <div class="md:w-1/2 m-4 p-4 rounded-md bg-yellow-500 text-white">
+                    <p class="text-lg leading-6 font-medium">Room #</p>
+                    <p class="my-4 text-3xl leading-6 font-medium uppercase">Session Title</p>
+                    <p class="text-base font-normal">Speaker name</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- SESSION 2 -->
+        <div class="rounded-xl bg-gray-400 overflow-hidden p-4 m-8">
+            <h2 class="ml-4 text-white text-4xl font-bold">10:15 - 11:15 am</h2>
+            <div class="flex flex-col md:flex-row space-4">
+                <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
+                    <p class="text-lg leading-6 font-medium">Room #</p>
+                    <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
+                    <p class="text-base font-normal">Speaker name</p>
+                </div>
+                <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
+                    <p class="text-lg leading-6 font-medium">Room #</p>
+                    <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
+                    <p class="text-base font-normal">Speaker name</p>
+                </div>
+                <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
+                    <p class="text-lg leading-6 font-medium">Room #</p>
+                    <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
+                    <p class="text-base font-normal">Speaker name</p>
+                </div>
+                <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
+                    <p class="text-lg leading-6 font-medium">Room #</p>
+                    <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
+                    <p class="text-base font-normal">Speaker name</p>
+                </div>
+                <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
+                    <p class="text-lg leading-6 font-medium">Room #</p>
+                    <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
+                    <p class="text-base font-normal">Speaker name</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SESSION 3 -->
+        <div class="rounded-xl bg-gray-400 overflow-hidden p-4 m-8">
+            <h2 class="ml-4 text-white text-4xl font-bold">11:30 am - 12:30 pm</h2>
+            <div class="flex flex-col md:flex-row space-4">
+                <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
+                    <p class="text-lg leading-6 font-medium">Room #</p>
+                    <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
+                    <p class="text-base font-normal">Speaker name</p>
+                </div>
+                <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
+                    <p class="text-lg leading-6 font-medium">Room #</p>
+                    <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
+                    <p class="text-base font-normal">Speaker name</p>
+                </div>
+                <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
+                    <p class="text-lg leading-6 font-medium">Room #</p>
+                    <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
+                    <p class="text-base font-normal">Speaker name</p>
+                </div>
+                <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
+                    <p class="text-lg leading-6 font-medium">Room #</p>
+                    <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
+                    <p class="text-base font-normal">Speaker name</p>
+                </div>
+                <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
+                    <p class="text-lg leading-6 font-medium">Room #</p>
+                    <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
+                    <p class="text-base font-normal">Speaker name</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SESSION 4 -->
+        <div class="rounded-xl bg-gray-400 overflow-hidden p-4 m-8">
+            <h2 class="ml-4 text-white text-4xl font-bold">12:30 - 1:15 pm</h2>
+            <div class="flex flex-col md:flex-row space-4">
+                <div class="md:w-full m-4 p-4 rounded-md bg-yellow-500 text-white">
+                    <p class="text-lg leading-6 font-medium">Room #</p>
+                    <p class="my-4 text-3xl leading-6 font-medium uppercase">Session Title</p>
+                    <p class="text-base font-normal">Speaker name</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SESSION 5 -->
+        <div class="rounded-xl bg-gray-400 overflow-hidden p-4 m-8">
+            <h2 class="ml-4 text-white text-4xl font-bold">1:15 - 2:15 pm</h2>
+            <div class="flex flex-col md:flex-row space-4">
+                <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
+                    <p class="text-lg leading-6 font-medium">Room #</p>
+                    <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
+                    <p class="text-base font-normal">Speaker name</p>
+                </div>
+                <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
+                    <p class="text-lg leading-6 font-medium">Room #</p>
+                    <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
+                    <p class="text-base font-normal">Speaker name</p>
+                </div>
+                <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
+                    <p class="text-lg leading-6 font-medium">Room #</p>
+                    <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
+                    <p class="text-base font-normal">Speaker name</p>
+                </div>
+                <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
+                    <p class="text-lg leading-6 font-medium">Room #</p>
+                    <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
+                    <p class="text-base font-normal">Speaker name</p>
+                </div>
+                <div class="md:w-1/5 m-4 p-4 rounded-md bg-yellow-500 text-white">
+                    <p class="text-lg leading-6 font-medium">Room #</p>
+                    <p class="my-4 text-xl leading-6 font-medium uppercase">Session Title</p>
+                    <p class="text-base font-normal">Speaker name</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SESSION 6 -->
+        <div class="rounded-xl bg-gray-400 overflow-hidden p-4 m-8">
+            <h2 class="ml-4 text-white text-4xl font-bold">2:30 - 4:00 pm</h2>
+            <div class="flex flex-col md:flex-row space-4">
+                <div class="md:w-full m-4 p-4 rounded-md bg-yellow-500 text-white">
+                    <p class="text-lg leading-6 font-medium">Room #</p>
+                    <p class="my-4 text-3xl leading-6 font-medium uppercase">Session Title</p>
+                    <p class="text-base font-normal">Speaker name</p>
+                </div>
+            </div>
+        </div>
+
     </div>
-  </div>
-</div>
+  </main>
 
-
-
-
-<!-- FOOTER -->
 
 <footer class="relative bg-gray-200 pt-8 pb-6">
-      <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px; transform: translateZ(0px);">
+      <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20">
       </div>
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap">
@@ -242,5 +256,5 @@
       </div>
     </footer>
 
+</div>
 </body>
-</html>
