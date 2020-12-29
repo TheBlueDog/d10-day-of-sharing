@@ -13978,15 +13978,23 @@ video {
 }
 
 .min-h-0 {
-  min-height: 0px;
+  min-height: 0;
+}
+
+.min-h-1\/4 {
+  min-height: 25vh;
+}
+
+.min-h-1\/2 {
+  min-height: 50vh;
+}
+
+.min-h-3\/4 {
+  min-height: 80vh;
 }
 
 .min-h-full {
   min-height: 100%;
-}
-
-.min-h-screen {
-  min-height: 100vh;
 }
 
 .min-w-0 {
@@ -44616,15 +44624,23 @@ video {
   }
 
   .sm\:min-h-0 {
-    min-height: 0px;
+    min-height: 0;
+  }
+
+  .sm\:min-h-1\/4 {
+    min-height: 25vh;
+  }
+
+  .sm\:min-h-1\/2 {
+    min-height: 50vh;
+  }
+
+  .sm\:min-h-3\/4 {
+    min-height: 80vh;
   }
 
   .sm\:min-h-full {
     min-height: 100%;
-  }
-
-  .sm\:min-h-screen {
-    min-height: 100vh;
   }
 
   .sm\:min-w-0 {
@@ -75176,15 +75192,23 @@ video {
   }
 
   .md\:min-h-0 {
-    min-height: 0px;
+    min-height: 0;
+  }
+
+  .md\:min-h-1\/4 {
+    min-height: 25vh;
+  }
+
+  .md\:min-h-1\/2 {
+    min-height: 50vh;
+  }
+
+  .md\:min-h-3\/4 {
+    min-height: 80vh;
   }
 
   .md\:min-h-full {
     min-height: 100%;
-  }
-
-  .md\:min-h-screen {
-    min-height: 100vh;
   }
 
   .md\:min-w-0 {
@@ -105736,15 +105760,23 @@ video {
   }
 
   .lg\:min-h-0 {
-    min-height: 0px;
+    min-height: 0;
+  }
+
+  .lg\:min-h-1\/4 {
+    min-height: 25vh;
+  }
+
+  .lg\:min-h-1\/2 {
+    min-height: 50vh;
+  }
+
+  .lg\:min-h-3\/4 {
+    min-height: 80vh;
   }
 
   .lg\:min-h-full {
     min-height: 100%;
-  }
-
-  .lg\:min-h-screen {
-    min-height: 100vh;
   }
 
   .lg\:min-w-0 {
@@ -136296,15 +136328,23 @@ video {
   }
 
   .xl\:min-h-0 {
-    min-height: 0px;
+    min-height: 0;
+  }
+
+  .xl\:min-h-1\/4 {
+    min-height: 25vh;
+  }
+
+  .xl\:min-h-1\/2 {
+    min-height: 50vh;
+  }
+
+  .xl\:min-h-3\/4 {
+    min-height: 80vh;
   }
 
   .xl\:min-h-full {
     min-height: 100%;
-  }
-
-  .xl\:min-h-screen {
-    min-height: 100vh;
   }
 
   .xl\:min-w-0 {
@@ -166856,15 +166896,23 @@ video {
   }
 
   .\32xl\:min-h-0 {
-    min-height: 0px;
+    min-height: 0;
+  }
+
+  .\32xl\:min-h-1\/4 {
+    min-height: 25vh;
+  }
+
+  .\32xl\:min-h-1\/2 {
+    min-height: 50vh;
+  }
+
+  .\32xl\:min-h-3\/4 {
+    min-height: 80vh;
   }
 
   .\32xl\:min-h-full {
     min-height: 100%;
-  }
-
-  .\32xl\:min-h-screen {
-    min-height: 100vh;
   }
 
   .\32xl\:min-w-0 {
