@@ -12,7 +12,7 @@
 <div>
 
   <!-- START: NAVIGATION BAR -->
-  <nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-gray-800">
+  <nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
     <div class="max-w-full mx-auto px-4 sm:px-6">
       <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
 
@@ -21,20 +21,20 @@
           
           <!-- START: Site Name -->
           <div class="flex justify-start lg:w-0 lg:flex-1">
-            <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md text-sm font-medium uppercase tracking-wide">AA Loudoun District 10</a>
+            <a href="index.html" class="text-gray-300 hover:bg-indigo-700 hover:text-white px-4 py-2 rounded-md text-sm font-bold uppercase tracking-wide">AA Loudoun District 10</a>
           </div>
           <!-- END: Site Name -->
           
           <!-- START: Menu Items -->
           <div class="hidden flex lg:block">
             <div class="ml-10 flex flex-grow items-baseline tracking-wide space-x-3">      
-              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="schedule.html" class="text-gray-300 hover:bg-gray-700 hover:text-white p-2 rounded-md text-sm font-light">Meeting Schedule</a>
-              <a href="participate.html" class="text-gray-300 hover:bg-gray-700 hover:text-white p-2 rounded-md text-sm font-light">Meeting Participation</a>
-              <a href="volunteer.html" class="text-gray-300 hover:bg-gray-700 hover:text-white p-2 rounded-md text-sm font-light">Be of Service</a>
-              <a href="resources.html" class="text-gray-300 hover:bg-gray-700 hover:text-white p-2 rounded-md text-sm font-light">Sober Resources</a>
-              <a href="faq.html" class="text-gray-300 hover:bg-gray-700 hover:text-white p-2 rounded-md text-sm font-light">FAQ</a>
-              <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white p-2 rounded-md text-sm font-light">Contact Us</a>
+              <!-- Current: "bg-indigo-800 text-white", Default: "text-gray-300 hover:bg-indigo-700 hover:text-white" -->
+              <a href="schedule.html" class="text-gray-300 hover:bg-indigo-700 hover:text-white p-2 rounded-md text-sm font-light">Meeting Schedule</a>
+              <a href="participate.html" class="text-gray-300 hover:bg-indigo-700 hover:text-white p-2 rounded-md text-sm font-light">Meeting Participation</a>
+              <a href="volunteer.html" class="text-gray-300 hover:bg-indigo-700 hover:text-white p-2 rounded-md text-sm font-light">Be of Service</a>
+              <a href="resources.html" class="text-gray-300 hover:bg-indigo-700 hover:text-white p-2 rounded-md text-sm font-light">Sober Resources</a>
+              <a href="faq.html" class="text-gray-300 hover:bg-indigo-700 hover:text-white p-2 rounded-md text-sm font-light">FAQ</a>
+              <a href="contact.html" class="text-gray-300 hover:bg-indigo-700 hover:text-white p-2 rounded-md text-sm font-light">Contact Us</a>
             </div>
           </div>
           <!-- END: Menu Items -->
@@ -45,7 +45,7 @@
         <!-- START: -->
         <div class="-mr-2 flex lg:hidden">
           <!-- START: Mobile menu button -->
-          <button @click="open = !open" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" x-bind:aria-expanded="open">
+          <button @click="open = !open" class="bg-indigo-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" x-bind:aria-expanded="open">
             <span class="sr-only">Open main menu</span>
             <svg x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'hidden': open, 'block': !open }" class="block h-6 w-6" x-description="Heroicon name: menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -78,7 +78,7 @@
   <!-- END: NAVIGATION BAR -->
 
   <!-- START: Hotline Banner -->
-  <section class="relative block py-2 bg-gray-900">
+  <section class="relative block py-2 bg-yellow-800 opacity-80 shadow-lg">
     <p class="text-center text-sm font-bold tracking-wider text-gray-300">24/7 Hotline: 703-293-9753</p>
   </section>
   <!-- END: Hotline Banner -->
@@ -87,24 +87,23 @@
     <!-- TOP INTRO SECTION -->
     <div class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-3/4">
         <div class="absolute top-0 w-full h-full bg-center bg-cover" style='background-image: url("assets/timon-studler-BIk2ANMmNz4-unsplash.jpg");'>
-            <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-blue-800">
+            <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-gradient-to-r from-yellow-700 to-purple-900">
             <p class="text-white text-xs text-opacity-40 absolute bottom-0 right-0 pr-4 pb-2">Photo by <a href="https://unsplash.com/@derstudi?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Timon Studler</a> on <a href="https://unsplash.com/s/photos/friends?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>            
             </span>
         </div>
         <div class="container relative mx-auto">
-            <div class="items-center flex flex-wrap">
+            <div class="items-center flex flex-wrap -top-36">
                 <div class="w-11/12 md:w-10/12 px-4 ml-auto mr-auto">
                     <div class="pr-12">
-
-                    <h3 class="mb-4 font-light tracking-wider text-2xl lg:text-3xl xl:text-4xl text-gray-300">
-                        February 27, 2021
-                    </h3>
-                    <h1 class="text-white font-light uppercase tracking-wider xl:tracking-widest text-6xl lg:text-7xl xl:text-8xl">
-                        Day of Sharing
-                    </h1>
-                    <p class="mt-4 text-lg lg:text-xl xl:text-2xl font-light tracking-wider text-gray-300">
-                        Carrying the message of hope and recovery
-                    </p>
+                      <h3 class="mb-4 font-extralight tracking-wider text-2xl lg:text-3xl xl:text-4xl text-gray-200">
+                          Saturday, February 27, 2021
+                      </h3>
+                      <h1 class="text-white font-medium uppercase tracking-normal text-6xl lg:text-7xl xl:text-8xl">
+                          Day of Sharing
+                      </h1>
+                      <p class="mt-4 font-extralight tracking-wider text-2xl lg:text-3xl xl:text-4xl text-gray-200">
+                          Treasured Friendships. Shared Experiences.
+                      </p>
                     </div>
                 </div>
             </div>
@@ -114,7 +113,6 @@
 
 
     <section class=" relative block bg-gray-900">
-
         <div class="container mx-auto px-4 lg:pt-20 lg:pb-20">
           <div class="flex flex-wrap py-8 justify-center">
             <div class="w-full lg:w-3/12 px-4 text-center">
