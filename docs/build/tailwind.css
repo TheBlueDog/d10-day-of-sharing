@@ -2291,7 +2291,7 @@ select {
   --tw-divide-opacity: 1;
   border-color: rgba(76, 29, 149, var(--tw-divide-opacity));
 }
-
+//dsdsd
 .divide-pink-50 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgba(253, 242, 248, var(--tw-divide-opacity));
