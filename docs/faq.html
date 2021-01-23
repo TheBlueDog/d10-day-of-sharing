@@ -21,21 +21,20 @@
           
           <!-- START: Site Name -->
           <div class="flex justify-start lg:w-0 lg:flex-1">
-            <div class="text-gray-300 px-4 py-2 rounded-md text-sm font-bold uppercase tracking-wide">AA Loudoun District 10</div>
+            <div class="nav-brand">AA Loudoun District 10</div>
           </div>
           <!-- END: Site Name -->
           
           <!-- START: Menu Items -->
           <div class="hidden flex lg:block">
             <div class="ml-10 flex flex-grow items-baseline tracking-wide space-x-3">      
-              <!-- Current: "bg-indigo-800 text-white", Default: "text-gray-300 hover:bg-indigo-700 hover:text-white" -->
-              <a href="schedule.html" class="text-gray-300 hover:bg-indigo-700 hover:text-white p-2 rounded-md text-sm font-light">Meeting Schedule</a>
-              <a href="participate.html" class="text-gray-300 hover:bg-indigo-700 hover:text-white p-2 rounded-md text-sm font-light">Meeting Participation</a>
-              <a href="volunteer.html" class="text-gray-300 hover:bg-indigo-700 hover:text-white p-2 rounded-md text-sm font-light">Be of Service</a>
-              <a href="resources.html" class="text-gray-300 hover:bg-indigo-700 hover:text-white p-2 rounded-md text-sm font-light">Sober Resources</a>
-              <a href="faq.html" class="bg-indigo-800 text-white hover:bg-indigo-700 hover:text-white p-2 rounded-md text-sm font-light">FAQ</a>
-              <a href="contact.html" class="text-gray-300 hover:bg-indigo-700 hover:text-white p-2 rounded-md text-sm font-light">Contact Us</a>
-              <a href="index.html" class="text-gray-300 hover:bg-indigo-700 hover:text-white p-2 rounded-md text-sm font-light">Home</a>
+              <a href="schedule.html" class="nav-item">Meeting Schedule</a>
+              <a href="participate.html" class="nav-item">Meeting Participation</a>
+              <a href="volunteer.html" class="nav-item">Be of Service</a>
+              <a href="resources.html" class="nav-item">Sober Resources</a>
+              <!-- <a href="faq.html" class="nav-item-active">FAQ</a> -->
+              <a href="contact.html" class="nav-item">Contact Us</a>
+              <a href="index.html" class="nav-item">Home</a>
             </div>
           </div>
           <!-- END: Menu Items -->
@@ -46,7 +45,7 @@
         <!-- START: -->
         <div class="-mr-2 flex lg:hidden">
           <!-- START: Mobile menu button -->
-          <button @click="open = !open" class="bg-indigo-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" x-bind:aria-expanded="open">
+          <button @click="open = !open" class="res-nav-button" x-bind:aria-expanded="open">
             <span class="sr-only">Open main menu</span>
             <svg x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'hidden': open, 'block': !open }" class="block h-6 w-6" x-description="Heroicon name: menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -62,17 +61,16 @@
       </div>
     </div>
 
-    <!-- START: Mobile Nav Menu -->
+    <!-- START: Responsive Nav Menu -->
     <div x-description="Mobile menu, toggle classes based on menu state." x-state:on="Open" x-state:off="closed" :class="{ 'block': open, 'hidden': !open }" class="hidden lg:hidden">
       <div class="px-3 pt-1 pb-3 space-y-1 sm:px-6">
-            <!-- Current: "text-white bg-indigo-800", Default: "text-gray-300 hover:bg-indigo-700 hover:text-white" -->
-            <a href="schedule.html" class="text-gray-300 hover:bg-indigo-700 hover:text-white block px-4 py-2 rounded-md text-base font-light">Meeting Schedule</a>
-            <a href="participate.html" class="text-gray-300 hover:bg-indigo-700 hover:text-white block px-4 py-2 rounded-md text-base font-light">Meeting Participation</a>
-            <a href="volunteer.html" class="text-gray-300 hover:bg-indigo-700 hover:text-white block px-4 py-2 rounded-md text-base font-light">Be of Service</a>
-            <a href="resources.html" class="text-gray-300 hover:bg-indigo-700 hover:text-white block px-4 py-2 rounded-md text-base font-light">Sober Resources</a>
-            <a href="faq.html" class="text-white bg-indigo-800 hover:bg-indigo-700 hover:text-white block px-4 py-2 rounded-md text-base font-light">FAQ</a>
-            <a href="contact.html" class="text-gray-300 hover:bg-indigo-700 hover:text-white block px-4 py-2 rounded-md text-base font-light">Contact Us</a>
-            <a href="index.html" class="text-gray-300 hover:bg-indigo-700 hover:text-white block px-4 py-2 rounded-md text-base font-light">Home</a>
+            <a href="schedule.html" class="res-nav-item">Meeting Schedule</a>
+            <a href="participate.html" class="res-nav-item">Meeting Participation</a>
+            <a href="volunteer.html" class="res-nav-item">Be of Service</a>
+            <a href="resources.html" class="res-nav-item">Sober Resources</a>
+            <!-- <a href="faq.html" class="res-nav-item-active">FAQ</a> -->
+            <a href="contact.html" class="res-nav-item">Contact Us</a>
+            <a href="index.html" class="res-nav-item">Home</a>
       </div>
     </div>
     <!-- END: Mobile Nav Menu -->
@@ -80,14 +78,14 @@
   <!-- END: NAVIGATION BAR -->
 
   <!-- START: Hotline Banner -->
-  <section class="relative block py-2 bg-yellow-600 opacity-100 shadow-lg">
-    <p class="text-center text-sm font-bold tracking-wider text-white">Do you need help now? Call the 24 hour AA hotline at 703-293-9753.</p>
+  <section class="hotline-block">
+    <p class="hotline-text">Do you need help now? Call the 24 hour AA hotline at 703-293-9753.</p>
   </section>
   <!-- END: Hotline Banner -->
 
-  <header class="bg-yellow-600 bg-opacity-10 shadow-lg">
-    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-      <h1 class="text-3xl font-light tracking-wide text-gray-900">
+  <header class="section-header">
+    <div class="section-header-containter">
+      <h1 class="section-header-h1">
         FAQ
       </h1>
     </div>
@@ -116,40 +114,6 @@
   </main>
 
 
-<footer class="relative bg-gray-200 pt-8 pb-6">
-      <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20">
-      </div>
-      <div class="container mx-auto px-4">
-        <div class="flex flex-wrap">
-          <div class="w-full lg:w-6/12 px-4">
-            <h4 class="text-3xl font-semibold">Loudoun District 10</h4>
-            <h5 class="text-lg mt-0 mb-2 text-gray-700">
-              of Alcoholics Anonymous
-            </h5>
-          </div>
-          <div class="w-full lg:w-6/12 px-4">
-            <div class="flex flex-wrap items-top mb-6">
-              <div class="w-full lg:w-4/12 px-4 ml-auto">
-                <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Useful Links</span>
-                <ul class="list-unstyled">
-                  <li><a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="#">Blog</a></li>
-                  <li><a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="#">Github</a></li>
-                  <li><a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="#">Free Products</a></li>
-                </ul>
-              </div>
-              <div class="w-full lg:w-4/12 px-4">
-                <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Other Resources</span>
-                <ul class="list-unstyled">
-                  <li><a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="#">MIT License</a></li>
-                  <li><a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="#">Privacy Policy</a></li>
-                  <li><a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="#">Contact Us</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
 
 </div>
 </body>

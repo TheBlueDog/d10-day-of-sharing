@@ -1,3 +1,62 @@
 @tailwind base;
 @tailwind components;
+
+    .nav-brand {
+        @apply text-gray-300 px-4 py-2 rounded-md text-sm font-bold uppercase tracking-wide;
+    }
+    .nav-item {
+        @apply text-gray-300 p-2 rounded-md text-sm font-light;
+    }
+    .nav-item:hover {
+        @apply bg-indigo-700 text-white;
+    }    
+    .nav-item-active {
+        @apply text-white bg-indigo-800 p-2 rounded-md text-sm font-light;
+    }
+
+    .res-nav-item {
+        @apply text-gray-300 block px-4 py-2 rounded-md text-base font-light;
+    }
+    .res-nav-item:hover {
+        @apply bg-indigo-700 text-white;
+    }    
+    .res-nav-item-active {
+        @apply text-white bg-indigo-800 block px-4 py-2 rounded-md text-base font-light;
+    }
+    .res-nav-button {
+        @apply bg-indigo-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400;
+    }
+    .res-nav-button:hover {
+        @apply text-white bg-indigo-700;
+    }
+    .res-nav-button:focus {
+        @apply outline-none ring-2 ring-offset-2 ring-offset-gray-800 ring-white;
+    }    
+    .hotline-block {
+        @apply sticky top-0 z-50 relative block py-2 bg-yellow-800 opacity-90 shadow-lg;
+    }
+    .hotline-text {
+        @apply text-center text-sm font-bold tracking-wider text-gray-300;
+    }
+    .section-header {
+        @apply bg-yellow-600 bg-opacity-10 shadow-lg;
+    }
+    .section-header-containter {
+        @apply max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8;
+    }
+    .section-header-h1 {
+        @apply text-xl md:text-2xl lg:text-3xl font-light tracking-wide text-gray-900;
+    }
+
+    .zoom-btn {
+        @apply justify-center py-1 px-2 mt-2 w-full border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-900;
+    }
+    .zoom-btn:hover {
+        @apply bg-indigo-700;
+    }
+    .zoom-btn:focus {
+        @apply outline-none ring-2 ring-offset-2 ring-indigo-500;
+    }
+
+
 @tailwind utilities;
