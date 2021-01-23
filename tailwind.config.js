@@ -16,5 +16,7 @@ module.exports = {
       tableLayout: ['hover', 'focus'],
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
