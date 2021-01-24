@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<title>D10: Day of Sharing 24</title>
+	<link rel="stylesheet" type="text/css" href="build/tailwind.css">
+  <link href="build/gallery.css" rel="stylesheet">
+  <link href="build/gallery-keyframes-swing.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.js" defer></script>
+</head>
+<body>
+  <body class="bg-white font-sans leading-loose tracking-wide text-base text-gray-900 font-light hyphens antialiased">
+    <!-- <div class="flex flex-col min-h-screen"> -->
+      <div class="flex-grow">
+        <div class="container mx-auto text-center text-xl font-light my-6">
+          <div class="my-2">
+            <div
+              class="gallery flex-grow relative mx-auto bg-gray-100 sm:rounded-lg shadow-xl"
+              x-data="gallery()"
+              x-init="init()"
+              style="min-height: 500px; max-height: 1000px;"
+            >
+              <div class="gallery__item sm:rounded-lg overflow-hidden">
+                <img
+                  src="https://picsum.photos/1024/768?random=1"
+                  alt=""
+                  class="gallery__image object-cover object-center"
+                  title="Image Title"
+                />
+              </div>
+              <div class="gallery__item gallery__item--hidden sm:rounded-lg overflow-hidden">
+                <img
+                  src="https://picsum.photos/1024/768?random=2"
+                  alt=""
+                  class="gallery__image object-cover object-center"
+                  title="Image Title"
+                />
+              </div>
+              <div class="gallery__item gallery__item--hidden sm:rounded-lg overflow-hidden">
+                <img
+                  src="https://picsum.photos/1024/768?random=3"
+                  alt=""
+                  class="gallery__image object-cover object-center"
+                  title="Image Title"
+                />
+              </div>
+              <div class="gallery__item gallery__item--hidden sm:rounded-lg overflow-hidden">
+                <img
+                  src="https://picsum.photos/1024/768?random=4"
+                  alt=""
+                  class="gallery__image object-cover object-center"
+                  title="Image Title"
+                />
+              </div>
+              <div
+                class="gallery__background bg-gray-200 flex flex-col justify-center items-center sm:rounded-lg overflow-hidden"
+              >
+                <h2 class="text-4xl font-semibold text-gray-400 w-2/3">
+                  Picture Gallery
+                </h2>
+                <h3 class="text-xl font-semibold text-gray-400 leading-normal w-2/3">
+                  Background info about the specific gallery and some random text.
+                </h3>
+              </div>
+              <a
+                class="gallery__nav gallery__nav--right text-white rounded-full w-10 h-10 flex items-center justify-center cursor-pointer"
+                x-on:click="next()"
+              >
+                <svg class="fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                  <path
+                    d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="gallery__nav gallery__nav--left text-white rounded-full w-10 h-10 flex items-center justify-center cursor-pointer"
+                x-on:click="previous()"
+              >
+                <svg class="fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                  <path
+                    d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--</div>-->
+    <script src="build/gallery.js"></script>
+  </body>
+</html>
