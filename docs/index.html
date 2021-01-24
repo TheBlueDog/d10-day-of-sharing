@@ -5,6 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie-edge">
 	<title>D10: Day of Sharing 24</title>
 	<link rel="stylesheet" type="text/css" href="build/tailwind.css">
+  <link href="build/gallery.css" rel="stylesheet">
+  <link href="build/gallery-keyframes-swing.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.js" defer></script>
 </head>
 <body>
@@ -110,6 +112,75 @@
         </div>
     </div>
 
+    <section class="relative w-full md:h-1/2">
+      <div class="flex flex-col md:flex-row h-1/2 md:h-full">
+          <div class="w-full md:w-2/5 xl:w-1/2 md:h-full bg-center bg-cover" style='background-image: url("assets/nikita-vantorin-F6Gk6nhwlmY-unsplash.jpg");'>
+            <p class="text-white text-xs text-opacity-60 absolute top-0 left-0 pl-4 pt-2">Photo by <a href="https://unsplash.com/@vantorin?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Nikita Vantorin</a> on <a href="https://unsplash.com/s/photos/inspirational?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+          </div>
+          <div class="w-full md:w-3/5 xl:w-1/2 px-10 my-auto">
+              <p class="text-xl leading-relaxed lg:leading-loose text-gray-500 font-serif">
+                “<strong><em>The Day of Sharing</em></strong> really has changed since it started. There were fewer meetings and they were more spread out. Monday night was Ashburn and Tuesday was Lucketts. The founder was new and thought it was a way to get everyone together and have a sampling of the different meetings. There were boxes of donuts in the am and subs at lunch. It has grown and changed, but has always been a great day. I have only missed one year. I was on a Florida trip with my sober ladies, so I didn’t cry.”
+                <br /><br />
+                <em>- Mary Ellen M.</em>
+              </p>
+          </div>
+      </div>
+    </section>
+
+    <!-- IMAGE GALLERY-->
+    <section class="w-full h-2/6 md:h-3/6 lg:h-4/6">
+      <div class="flex-grow">
+          <div>
+            <div class="gallery flex-grow relative bg-gray-100" x-data="gallery()" x-init="init()" style="">
+              <!-- IMAGE ARRAY -->
+              <div class="gallery__item overflow-hidden">
+                <img
+                  src="assets/serenity.png"
+                  alt="God, grant me the serenity to accept the things I cannot change, courage to change the things I can, and wisdom to know the difference."
+                  class="gallery__image object-cover object-center"
+                  title="Serenity Prayer"
+                />
+              </div>
+              <div class="gallery__item gallery__item--hidden overflow-hidden">
+                <img
+                  src="assets/responsibility.png"
+                  alt="I am responsible, when anyone, anywhere, reaches out for help, I want the hand of AA to always be there, and for that I am responsible."
+                  class="gallery__image object-cover object-center"
+                  title="Responsibility Statement"
+                />
+              </div>
+              <div class="gallery__item gallery__item--hidden overflow-hidden">
+                <img
+                  src="assets/oneday.png"
+                  alt="One Day at a Time"
+                  class="gallery__image object-cover object-center"
+                  title="One Day at a Time"
+                />
+              </div>
+              
+              <!-- NEXT BUTTON -->
+              <a class="gallery__nav gallery__nav--right text-white rounded-full w-10 h-10 flex items-center justify-center cursor-pointer" x-on:click="next()">
+                <svg class="fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                  <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/>
+                </svg>
+              </a>
+              
+              <!-- PREVIOUS BUTTON -->
+              <a class="gallery__nav gallery__nav--left text-white rounded-full w-10 h-10 flex items-center justify-center cursor-pointer" x-on:click="previous()">
+                <svg class="fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                  <path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/>
+                </svg>
+              </a>
+
+            </div>
+          </div>
+      </div>
+    </section>
+
+
+
+
+
       <section class=" relative block bg-indigo-900">
         <div class="container mx-auto px-4 lg:py-4">
           <div class="flex flex-wrap py-8 justify-center">
@@ -122,21 +193,7 @@
         </div>
       </section>
 
-      <section class="relative w-full  md:h-1/2">
-        <div class="flex flex-col md:flex-row h-full">
-            <div class="w-full md:w-2/5 xl:w-1/2 h-1/2 md:h-full bg-center bg-cover" style='background-image: url("assets/nikita-vantorin-F6Gk6nhwlmY-unsplash.jpg");'>
-              <p class="text-white text-xs text-opacity-40 absolute top-0 left-0 pl-4 pt-2">Photo by <a href="https://unsplash.com/@vantorin?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Nikita Vantorin</a> on <a href="https://unsplash.com/s/photos/inspirational?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
-            </div>
-            <div class="w-full md:w-3/5 xl:w-1/2 p-10">
-              <h3 class="text-3xl text-gray-600 font-semibold">Why you should join us?</h3>
-                <p class="mt-6 text-xl md:text-lg lg:text-xl leading-relaxed text-gray-500 font-serif">
-                  “It (The Day of Sharing) really has changed since it started. There were fewer meetings and they were more spread out. (Monday night was Ashburn and Tuesday was Lucketts)... the founder was new and thought it was a way to get everyone together and have a sampling of the different meetings. There were boxes of donuts in the am and subs at lunch... it has grown and changed but has always been a great day. I have only missed one year. I was on a Florida trip with my sober ladies so I didn’t cry.”
-                  <br /><br />
-                  <em>- Mary Ellen M.</em>
-                </p>
-            </div>
-        </div>
-      </section>
+
 
   </main>
 
@@ -144,4 +201,5 @@
 
 
 </div>
+<script src="build/gallery.js"></script>
 </body>
