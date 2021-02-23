@@ -47,9 +47,26 @@
     .section-header-h1 {
         @apply text-xl md:text-2xl lg:text-3xl font-light tracking-wide text-gray-900;
     }
+    
+    .schedule-row {
+        @apply rounded-xl bg-yellow-600 bg-opacity-10 overflow-hidden p-4 my-8;
+    }
+    .schedule-heading {
+        @apply ml-4 text-gray-800 text-2xl font-normal;
+    }
+    
+    .session-block {
+        @apply md:w-full m-2 p-2 rounded-md bg-yellow-500 text-white flex flex-col;
+    }
+    .session-title {
+        @apply uppercase text-xl lg:text-2xl font-normal mb-1;
+    }
+    .session-desc {
+        @apply text-base mb-2 font-normal;
+    }
 
     .zoom-btn {
-        @apply justify-center py-1 px-2 mt-2 w-full border border-transparent shadow-sm text-xs font-medium rounded-md text-white bg-indigo-900;
+        @apply justify-center py-1 px-2 mt-auto w-full border border-transparent shadow-sm text-xs font-medium rounded-md text-white bg-indigo-900;
     }
     .zoom-btn:hover {
         @apply bg-indigo-700;
