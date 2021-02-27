@@ -13,7 +13,12 @@
     .nav-item-active {
         @apply text-white bg-indigo-800 p-2 rounded-md text-sm font-light;
     }
-
+    .nav-item-highlight {
+        @apply bg-yellow-500 p-2 rounded-md text-sm font-bold text-yellow-900;
+    }
+    .nav-item-highlight:hover {
+        @apply bg-yellow-600;
+    }
     .res-nav-item {
         @apply text-gray-300 block px-4 py-2 rounded-md text-base font-light;
     }
@@ -23,6 +28,14 @@
     .res-nav-item-active {
         @apply text-white bg-indigo-800 block px-4 py-2 rounded-md text-base font-light;
     }
+
+    .res-nav-item-highlight {
+        @apply bg-yellow-500 block px-4 py-2 rounded-md text-base font-bold text-yellow-900;
+    }
+    .res-nav-item-highlight:hover {
+        @apply bg-yellow-600;
+    }
+
     .res-nav-button {
         @apply bg-indigo-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400;
     }
