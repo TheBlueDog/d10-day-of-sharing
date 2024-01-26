@@ -11,8 +11,8 @@
 
 <div>
 
-  <!-- START: NAVIGATION BAR -->
-  <nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
+   <!-- START: NAVIGATION BAR -->
+   <nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
     <div class="max-w-full mx-auto px-4 sm:px-6">
       <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
 
@@ -28,9 +28,9 @@
           <!-- START: Menu Items -->
           <div class="hidden flex lg:block">
             <div class="ml-10 flex flex-grow items-baseline tracking-wide space-x-3">      
-              <a href="schedule.html" class="nav-item-highlight">Meeting Schedule</a>
-              <a href="participate.html" class="nav-item">Meeting Participation</a>
-              <a href="volunteer.html" class="nav-item-active">Be of Service</a>
+              <!-- <a href="schedule.html" class="nav-item-highlight">Meeting Schedule</a> -->
+              <!-- <a href="participate.html" class="nav-item">Meeting Participation</a> -->
+              <a href="volunteer.html" class="nav-item">Be of Service</a>
               <a href="resources.html" class="nav-item">Sober Resources</a>
               <!-- <a href="faq.html" class="nav-item">FAQ</a> -->
               <a href="contact.html" class="nav-item">Contact Us</a>
@@ -64,9 +64,9 @@
     <!-- START: Responsive Nav Menu -->
     <div x-description="Mobile menu, toggle classes based on menu state." x-state:on="Open" x-state:off="closed" :class="{ 'block': open, 'hidden': !open }" class="hidden lg:hidden">
       <div class="px-3 pt-1 pb-3 space-y-1 sm:px-6">
-            <a href="schedule.html" class="res-nav-item-highlight">Meeting Schedule</a>
-            <a href="participate.html" class="res-nav-item">Meeting Participation</a>
-            <a href="volunteer.html" class="res-nav-item-active">Be of Service</a>
+          <!-- <a href="schedule.html" class="res-nav-item-highlight">Meeting Schedule</a>  -->
+          <!-- <a href="participate.html" class="res-nav-item">Meeting Participation</a> -->
+            <a href="volunteer.html" class="res-nav-item">Be of Service</a>
             <a href="resources.html" class="res-nav-item">Sober Resources</a>
             <!-- <a href="faq.html" class="res-nav-item">FAQ</a> -->
             <a href="contact.html" class="res-nav-item">Contact Us</a>
@@ -97,13 +97,11 @@
       <!-- Section 1 -->
         <div class="rounded-xl overflow-hidden my-8">
           <h2 class="text-4xl font-light tracking-wide text-gray-900 mb-6">Interested in being of service at the Day of Sharing?</h2>
-            <p class="mb-2">The committee is looking for Zoom Hosts and Co-Hosts.</p>
+            <p class="mb-2">The committee is looking for volunteers to be of service.</p>
             <p class="mb-2">Please contact via email: <a href="mailto:d10dayofsharing@gmail.com" class="text-blue-700">d10dayofsharing@gmail.com</a>.</p>
             <p class="mb-1">Or you may contact us directly by phone or text:</p>
             <ul>
-            <li><b>Stacy R.</b> at 202-255-4375<li>
-            <li><b>Jennie G.</b> at 571-926-0269</li>
-            <li><b>Peter G.</b> at 703-298-4090</li>
+            <li><b>Andy C.</b> at 703-932-9253<li>
             <ul>
         </div>
 

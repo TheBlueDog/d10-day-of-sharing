@@ -11,71 +11,71 @@
 
 <div>
 
-  <!-- START: NAVIGATION BAR -->
-  <nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
-    <div class="max-w-full mx-auto px-4 sm:px-6">
-      <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
-
-        <!-- START: Web Navbar -->
-        <div class="flex flex-grow items-center">
-          
-          <!-- START: Site Name -->
-          <div class="flex justify-start lg:w-0 lg:flex-1">
-            <div class="nav-brand">AA Loudoun District 10</div>
-          </div>
-          <!-- END: Site Name -->
-          
-          <!-- START: Menu Items -->
-          <div class="hidden flex lg:block">
-            <div class="ml-10 flex flex-grow items-baseline tracking-wide space-x-3">      
-              <a href="schedule.html" class="nav-item-highlight">Meeting Schedule</a>
-              <a href="participate.html" class="nav-item-active">Meeting Participation</a>
-              <a href="volunteer.html" class="nav-item">Be of Service</a>
-              <a href="resources.html" class="nav-item">Sober Resources</a>
-              <!-- <a href="faq.html" class="nav-item">FAQ</a> -->
-              <a href="contact.html" class="nav-item">Contact Us</a>
-              <a href="index.html" class="nav-item">Home</a>
+    <!-- START: NAVIGATION BAR -->
+    <nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
+      <div class="max-w-full mx-auto px-4 sm:px-6">
+        <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
+  
+          <!-- START: Web Navbar -->
+          <div class="flex flex-grow items-center">
+            
+            <!-- START: Site Name -->
+            <div class="flex justify-start lg:w-0 lg:flex-1">
+              <div class="nav-brand">AA Loudoun District 10</div>
             </div>
+            <!-- END: Site Name -->
+            
+            <!-- START: Menu Items -->
+            <div class="hidden flex lg:block">
+              <div class="ml-10 flex flex-grow items-baseline tracking-wide space-x-3">      
+                <!-- <a href="schedule.html" class="nav-item-highlight">Meeting Schedule</a> -->
+                <!-- <a href="participate.html" class="nav-item">Meeting Participation</a> -->
+                <a href="volunteer.html" class="nav-item">Be of Service</a>
+                <a href="resources.html" class="nav-item">Sober Resources</a>
+                <!-- <a href="faq.html" class="nav-item">FAQ</a> -->
+                <a href="contact.html" class="nav-item">Contact Us</a>
+                <a href="index.html" class="nav-item">Home</a>
+              </div>
+            </div>
+            <!-- END: Menu Items -->
+  
           </div>
-          <!-- END: Menu Items -->
-
+          <!-- END: Web Navbar -->
+  
+          <!-- START: -->
+          <div class="-mr-2 flex lg:hidden">
+            <!-- START: Mobile menu button -->
+            <button @click="open = !open" class="res-nav-button" x-bind:aria-expanded="open">
+              <span class="sr-only">Open main menu</span>
+              <svg x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'hidden': open, 'block': !open }" class="block h-6 w-6" x-description="Heroicon name: menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+              <svg x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'hidden': !open, 'block': open }" class="hidden h-6 w-6" x-description="Heroicon name: x" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+            <!-- END: Mobile menu button -->
+          </div>
+          <!-- END: -->
+  
         </div>
-        <!-- END: Web Navbar -->
-
-        <!-- START: -->
-        <div class="-mr-2 flex lg:hidden">
-          <!-- START: Mobile menu button -->
-          <button @click="open = !open" class="res-nav-button" x-bind:aria-expanded="open">
-            <span class="sr-only">Open main menu</span>
-            <svg x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'hidden': open, 'block': !open }" class="block h-6 w-6" x-description="Heroicon name: menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-            <svg x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'hidden': !open, 'block': open }" class="hidden h-6 w-6" x-description="Heroicon name: x" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
-          </button>
-          <!-- END: Mobile menu button -->
+      </div>
+  
+      <!-- START: Responsive Nav Menu -->
+      <div x-description="Mobile menu, toggle classes based on menu state." x-state:on="Open" x-state:off="closed" :class="{ 'block': open, 'hidden': !open }" class="hidden lg:hidden">
+        <div class="px-3 pt-1 pb-3 space-y-1 sm:px-6">
+            <!-- <a href="schedule.html" class="res-nav-item-highlight">Meeting Schedule</a>  -->
+            <!-- <a href="participate.html" class="res-nav-item">Meeting Participation</a> -->
+              <a href="volunteer.html" class="res-nav-item">Be of Service</a>
+              <a href="resources.html" class="res-nav-item">Sober Resources</a>
+              <!-- <a href="faq.html" class="res-nav-item">FAQ</a> -->
+              <a href="contact.html" class="res-nav-item">Contact Us</a>
+              <a href="index.html" class="res-nav-item">Home</a>
         </div>
-        <!-- END: -->
-
       </div>
-    </div>
-
-    <!-- START: Responsive Nav Menu -->
-    <div x-description="Mobile menu, toggle classes based on menu state." x-state:on="Open" x-state:off="closed" :class="{ 'block': open, 'hidden': !open }" class="hidden lg:hidden">
-      <div class="px-3 pt-1 pb-3 space-y-1 sm:px-6">
-            <a href="schedule.html" class="res-nav-item-highlight">Meeting Schedule</a>
-            <a href="participate.html" class="res-nav-item-active">Meeting Participation</a>
-            <a href="volunteer.html" class="res-nav-item">Be of Service</a>
-            <a href="resources.html" class="res-nav-item">Sober Resources</a>
-            <!-- <a href="faq.html" class="res-nav-item">FAQ</a> -->
-            <a href="contact.html" class="res-nav-item">Contact Us</a>
-            <a href="index.html" class="res-nav-item">Home</a>
-      </div>
-    </div>
-    <!-- END: Mobile Nav Menu -->
-  </nav>
-  <!-- END: NAVIGATION BAR -->
+      <!-- END: Mobile Nav Menu -->
+    </nav>
+    <!-- END: NAVIGATION BAR -->
 
   <!-- START: Hotline Banner -->
   <section class="hotline-block">
