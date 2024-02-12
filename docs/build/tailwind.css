@@ -1078,10 +1078,41 @@ select {
   }
 }
 
+.session-open {
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1024px) {
+  .session-open {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
 .session-desc {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   line-height: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.session-room {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.session-leader {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 400;
 }
 

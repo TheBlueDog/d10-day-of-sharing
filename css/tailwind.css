@@ -67,15 +67,23 @@
     .schedule-heading {
         @apply ml-4 text-gray-800 text-2xl font-normal;
     }
-    
     .session-block {
         @apply md:w-full m-2 p-2 rounded-md bg-yellow-500 text-white flex flex-col;
     }
     .session-title {
         @apply uppercase text-xl lg:text-2xl font-normal mb-1;
     }
+    .session-open {
+        @apply uppercase text-xl lg:text-3xl font-extrabold mb-1;
+    }
     .session-desc {
-        @apply text-base mb-2 font-normal;
+        @apply text-base mb-2 font-normal italic;
+    }
+    .session-room {
+        @apply text-sm mb-2 font-normal underline;
+    }
+    .session-leader {
+        @apply text-sm mb-2 font-normal;
     }
 
     .zoom-btn {
