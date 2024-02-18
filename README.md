@@ -1,4 +1,4 @@
-# Project: D10: Day of Sharing 24
+# Project: D10: Day of Sharing 24 & 27 (2021 & 2024)
 
 
 ## Setting up Tailwind and PostCSS
